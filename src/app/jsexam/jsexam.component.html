@@ -1,0 +1,31 @@
+
+<form>
+<div id="exampaper">
+    <h1 style="color: blueviolet;text-align: center;text-transform: uppercase;">Java Script Online Exam</h1>
+    <ol style="width: 1000px;margin-left: 250px; align-items: center;">  
+    <div class="card card-block"
+       *ngFor="let exam of jsexam">
+       
+         
+    <li style="font-size:30px;  margin-left: 35px;"><h4  class="card-title">{{exam.question}}</h4></li>
+    <ol>
+    <div>
+    <li><input name="ans" type="radio">{{exam.op1}}</li>
+    <li><input name="ans" type="radio">{{exam.op2}}</li>
+    <li><input name="ans" type="radio">{{exam.op3}}</li>
+    <li><input name="ans" type="radio">{{exam.op4}}</li>
+</div>
+    </ol>
+    <br>
+</div>
+</ol>
+       
+      
+    
+</div> 
+<div id="buttons">
+    <button  class="btn btn-success" style="color:white;font-weight: bold;" (click)="marks()" >Submit Answer</button>
+    <button class="btn btn-danger" style="color:white;font-weight: bold; margin-left: 10px;" type="reset">Reset Answer</button >
+</div>   
+    
+    </form>
