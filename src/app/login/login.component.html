@@ -1,10 +1,42 @@
 <body>
     <div class="box">
-        <h1>login</h1>
-        <input type="text" name="" placeholder="Username" [(ngModel)]="uname">
-        <input type="password" name="" placeholder="Password" [(ngModel)]="upass">
-        <b>{{upass}}</b>
-        <input type="submit" name="" value="login" (click)="check()">
-        <h5>Note: username :admin<br> password : 1234</h5>
+        <h1>login</h1><br>
+        <div class="row">
+            <div class="col">
+                <i class="fa fa-user-circle-o fa-5x fa-color" aria-hidden="true"></i>
+                </div>
+                <div class="col">
+                <input type="text" name="" placeholder="Username" [(ngModel)]="uname">
+            </div>
+            </div>
+     <div class="row">
+          <div class="col">
+            <i class="fa fa-lock fa-5x fa-color" aria-hidden="true"></i>
+         </div>
+
+        <div class="col">
+            <input type="password" name="" placeholder="Password" [(ngModel)]="upass">
+            <div id="checkbox" class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" (click)="checkbox()" for="customCheck1">Show Password</label>
+              </div>
+        </div>
     </div>
-    </body>
+    
+    <b *ngIf="checkbox1">{{upass}}</b>
+        <div class="row">
+
+        
+        <input type="submit" name="" value="login" (click)="check()">
+        
+        
+   
+     </div>
+     <h5>Note: username :admin<br> password : 1234</h5>
+    </div>
+
+<h1></h1>
+
+       
+  
+</body>

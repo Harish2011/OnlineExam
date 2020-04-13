@@ -1,0 +1,43 @@
+[
+    {
+        "question":"Which of the following function of Number object formats a number with a specific number of digits to the right of the decimal?Which of the following function of Number object formats a number with a specific number of digits to the right of the decimal?",
+        "op1":"toExponential()",
+        "op2":"toFixed()",
+        "op3":"toPrecision()",
+        "op4":"toLocalstring()",
+        "answer":"toFixed()"
+     }
+     ,
+     {
+         "question":"Which of the following function of String object returns a number indicating the Unicode value of the character at the given index?",
+         "op1":"charAt()",
+         "op2":"charCodeAt()",
+         "op3":"concat()",
+         "op4":"indexOf()",
+         "answer":"charCodeAt()"
+     },
+     {
+         "question":" Which of the following function of String object creates an HTML hypertext link that requests another URL?",
+         "op1":"link()",
+         "op2":"sub()",
+         "op3":"sup()",
+         "op4":"small()",
+         "answer":"link()"
+     },
+     {
+         "question":"Which of the following function of Array object applies a function simultaneously against two values of the array (from left-to-right) as to reduce it to a single value?",
+         "op1":"pop()",
+         "op2":"push()",
+         "op3":"reduce()",
+         "op4":"reduceRight()",
+         "answer":"reduce()"
+     },
+     {
+         "question":"Which of the following function of Array object extracts a section of an array and returns a new array?",
+         "op1":"reverse()",
+         "op2":"shift()",
+         "op3":"slice()",
+         "op4":"some()",
+         "answer":"slice()"
+     }
+]

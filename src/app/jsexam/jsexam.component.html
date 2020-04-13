@@ -1,31 +1,70 @@
+<div id="header">
+    <header class="page-header font-small blue fixed-top bg-dark">
+        <h1>Cloud Collab Written Test <i class="fa fa-clock-o fa-1x" aria-hidden="true"> </i> {{min}}:{{counter}}</h1>   <div id="timer">
+            
+        </div>   
+    </header>
+   
+</div>
 
-<form>
-<div id="exampaper">
-    <h1 style="color: blueviolet;text-align: center;text-transform: uppercase;">Java Script Online Exam</h1>
-    <ol style="width: 1000px;margin-left: 250px; align-items: center;">  
-    <div class="card card-block"
-       *ngFor="let exam of jsexam">
-       
-         
-    <li style="font-size:30px;  margin-left: 35px;"><h4  class="card-title">{{exam.question}}</h4></li>
-    <ol>
-    <div>
-    <li><input name="ans" type="radio">{{exam.op1}}</li>
-    <li><input name="ans" type="radio">{{exam.op2}}</li>
-    <li><input name="ans" type="radio">{{exam.op3}}</li>
-    <li><input name="ans" type="radio">{{exam.op4}}</li>
-</div>
-    </ol>
-    <br>
-</div>
-</ol>
-       
-      
-    
-</div> 
-<div id="buttons">
-    <button  class="btn btn-success" style="color:white;font-weight: bold;" (click)="marks()" >Submit Answer</button>
-    <button class="btn btn-danger" style="color:white;font-weight: bold; margin-left: 10px;" type="reset">Reset Answer</button >
-</div>   
-    
-    </form>
+    <div id="personal">
+
+        <form  [formGroup]="employeeForm" (ngSubmit)="onSubmit()" class="form-horizontal"> 
+            <div class="panel panel-primary" id="exampaper">
+            <ol>
+             <div class="card card-block"
+                *ngFor="let exam of jsexam" id="qs" >
+            <li id="serialno">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{exam.question}}</h3>
+                </div>
+            </li>
+            
+             <div class="panel-body"> 
+            
+                 
+                 <div class="form-group">
+                  
+                    <div class="col-md-5">
+                        <ol id="ops">
+                            <div>
+                               <li ><input  id="ops" name="ops" type="radio" value="{{exam.op1}}" formControlName="ops">{{exam.op1}}</li>
+                               <li><input id="ops" name="ops" type="radio" value="{{exam.op2}}"  formControlName="ops">{{exam.op2}}</li>
+                               <li><input  id="ops" name="ops" type="radio" value="{{exam.op3}}" formControlName="ops">{{exam.op3}}</li>
+                               <li><input id="ops" name="ops" type="radio" value="{{exam.op4}}" formControlName="ops">{{exam.op4}}</li>
+                            </div>
+                        </ol>
+                        </div>
+                </div>
+        
+                 
+             </div>
+             </div>
+             <header class="page-header font-small blue fixed-bottom bg-dark">
+                      
+            
+                <div class="panel-footer">
+   
+                   <div class="btn-toolbar">
+                       <div class="row">
+                           <div class="col">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                           </div>
+                           <div class="col">
+                            <button class="btn btn-danger" type="button" (click)="onLoadDataClick()">Answer</button>
+                           </div>
+                           <div class="col">
+                               <button class="btn btn-success" type="button" (click)="check()">Next</button>
+                           </div>
+                           
+                       </div>
+                   </div>
+               
+              </div>
+           </header>
+        </ol>
+            </div>
+            </form>
+            
+          
+        </div>

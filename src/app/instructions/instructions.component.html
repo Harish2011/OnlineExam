@@ -1,0 +1,51 @@
+<div id="header">
+<b><i class="fa fa-clock-o " aria-hidden="true"></i> {{min}}:{{sec}}</b>
+</div>
+<div id="container">
+<div id="table">
+  <div>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Subjects</th>
+            <th scope="col">Questions</th>
+            <th scope="col">Marks</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>JavaScript</td>
+            <td> 10</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>HTML</td>
+            <td>10</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>CSS</td>
+            <td>10</td>
+            <td>20</td>
+          </tr>
+          <tr class="thead-light">
+              <td colspan="3" style="text-align: center;">Total</td>
+              <td>60 Marks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+    <div id="greating">
+        <b>All the best<br><i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i></b>
+    </div>
+    
+        <button class="btn btn-dark" (click)="skip()">Skip</button>
+  
+
+</div>

@@ -1,0 +1,33 @@
+#header
+{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+#table
+{
+    width: 900px;
+    height: 50;
+   
+}
+#greating
+{
+    text-align: center;
+    font-size: 30px;
+    
+    
+}
+#container
+{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+
+}
+button
+{
+    margin-left: 750px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+}
